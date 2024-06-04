@@ -127,7 +127,6 @@ ul>li p {
     /* border: 6px solid green; */
     scrollbar-width: auto;
     overflow-x: scroll;
-    scrollbar-color: red;
     gap: 5px;
   }
 
