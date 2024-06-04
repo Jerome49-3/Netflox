@@ -129,8 +129,12 @@ ul>li p {
     height: 100%;
     /* border: 6px solid green; */
     scrollbar-width: thin;
-    /* overflow-x: scroll; */
+    overflow-x: none;
     gap: 5px;
+  }
+
+  .slide::-webkit-scrollbar {
+    display: none;
   }
 
   .imgSlide {
