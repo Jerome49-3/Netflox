@@ -71,8 +71,6 @@ article {
   width: 100%;
   height: 100%;
   /* border: 6px solid green; */
-  scrollbar-width: none;
-  overflow-x: none;
   gap: 10px;
 }
 
@@ -86,7 +84,6 @@ ul>li {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 2rem;
   background-color: var(--backgMain);
 }
@@ -128,13 +125,14 @@ ul>li p {
     flex-direction: row;
     height: 100%;
     /* border: 6px solid green; */
-    scrollbar-width: thin;
-    overflow-x: hidden;
+    scrollbar-width: auto;
+    overflow-x: scroll;
+    scrollbar-color: red;
     gap: 5px;
   }
 
   .slide::-webkit-scrollbar {
-    display: none;
+    overflow-x: hidden;
   }
 
   .imgSlide {
