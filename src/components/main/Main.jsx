@@ -8,33 +8,35 @@ const Main = () => {
   return (
     <>
       <section>
-        {movies.map((movie, key = uuidv4()) => {
-          { console.log('movie:', movie); }
-          { console.log('key:', key); }
-          return (
-            <>
-              <Title title={movie.category} classTxt="category" />
-              <div>
-                <div class="caroussel">
-                  <div>
-                    <div class="slide">
-                      {movie.images.map((image, key = uuidv4()) => {
-                        { console.log('image:', image); }
-                        { console.log('key:', key); }
-                        return (
-                          <article className="article">
-                            <Image src={image} classImg="imgSlide" />
-                          </article>
-                        );
-                      })}
+        <div className="wrapperMain">
+          {movies.map((movie, key = uuidv4()) => {
+            { console.log('movie:', movie); }
+            { console.log('key:', key); }
+            return (
+              <>
+                <Title title={movie.category} classTxt="category" />
+                <div>
+                  <div class="caroussel">
+                    <div>
+                      <div class="slide">
+                        {movie.images.map((image, key = uuidv4()) => {
+                          { console.log('image:', image); }
+                          { console.log('key:', key); }
+                          return (
+                            <article className="article">
+                              <Image src={image} classImg="imgSlide" />
+                            </article>
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-            </>
-          );
-        })}
+              </>
+            );
+          })}
+        </div>
       </section>
     </>
   )

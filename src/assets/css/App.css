@@ -27,6 +27,11 @@ section {
   background-color: var(--backgMain);
 }
 
+.wrapperMain {
+  max-width: 95%;
+  margin-left: auto;
+}
+
 section h1:first-child {
   padding-top: 190px;
 }
@@ -65,8 +70,8 @@ article {
   width: 100%;
   height: 100%;
   /* border: 6px solid green; */
-  scrollbar-width: hidden;
-  overflow-x: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
   gap: 10px;
 }
 
