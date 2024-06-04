@@ -129,7 +129,7 @@ ul>li p {
     height: 100%;
     /* border: 6px solid green; */
     scrollbar-width: thin;
-    overflow-x: none;
+    overflow-x: hidden;
     gap: 5px;
   }
 
