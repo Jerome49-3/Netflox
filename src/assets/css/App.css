@@ -23,12 +23,13 @@
 
 /* MAIN */
 
-section {
+body {
   background-color: var(--backgMain);
 }
 
 .wrapperMain {
   max-width: 95%;
+  height: 320px;
   margin-left: auto;
   margin-right: auto;
 }
