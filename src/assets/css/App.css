@@ -1,3 +1,9 @@
+/* MAIN */
+
+body {
+  background-color: var(--backgMain);
+}
+
 /* HEADER */
 .header {
   width: 100%;
@@ -9,7 +15,6 @@
 }
 
 .wrapper {
-  padding: 10px;
   max-width: 50%;
   display: flex;
   justify-content: center;
@@ -23,8 +28,8 @@
 
 /* MAIN */
 
-body {
-  background-color: var(--backgMain);
+main {
+  padding-top: 150px;
 }
 
 .wrapperMain {
@@ -32,10 +37,6 @@ body {
   height: 320px;
   margin-left: auto;
   margin-right: auto;
-}
-
-section h1:first-child {
-  padding-top: 190px;
 }
 
 .category {

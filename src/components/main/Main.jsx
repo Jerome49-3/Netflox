@@ -6,15 +6,17 @@ import Section from '../section/Section'
 const Main = () => {
   return (
     <>
-      {movies.map((movie, key = uuidv4()) => {
-        { console.log('movie:', movie); }
-        { console.log('key:', key); }
-        return (
-          <>
-            <Section movie={movie} />
-          </>
-        );
-      })}
+      <main>
+        {movies.map((movie, key = uuidv4()) => {
+          { console.log('movie:', movie); }
+          { console.log('key:', key); }
+          return (
+            <>
+              <Section movie={movie} />
+            </>
+          );
+        })}
+      </main>
     </>
   )
 }
