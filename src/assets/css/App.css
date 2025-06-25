@@ -22,6 +22,7 @@ body {
   align-items: center;
   overflow: hidden;
   height: 100%;
+  transition: all 1s linear;
 }
 
 .imgHeader {
@@ -109,16 +110,17 @@ ul>li p {
 }
 
 @media (min-width: 768px) {
-
+  header{
+    height: 150px;
+  }
   .wrapper {
-    transition: all 1s linear;
-    min-width: 90%;
     justify-content: flex-start !important;
   }
 
   .imgHeader {
     width: 300px;
     height: 150px;
+    margin-left: -30px;
   }
 /* MAIN */
     main {
