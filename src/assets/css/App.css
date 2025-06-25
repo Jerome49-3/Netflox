@@ -23,6 +23,7 @@ body {
   overflow: hidden;
   height: 100%;
   transition: all 1s linear;
+  width: 100%;
 }
 
 .imgHeader {
@@ -55,7 +56,7 @@ main {
   font-size: 1.5rem;
 }
 
-.caroussel>div {
+.caroussel > div {
   display: flex;
   /* border: 6px solid red; */
 }
@@ -87,7 +88,7 @@ article {
   justify-content: center;
 }
 
-ul>li {
+ul > li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,13 +96,13 @@ ul>li {
   background-color: var(--backgMain);
 }
 
-ul>li,
-ul>li a {
+ul > li,
+ul > li a {
   font-size: 1.3rem;
   color: var(--colorText);
 }
 
-ul>li p {
+ul > li p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,11 +111,14 @@ ul>li p {
 }
 
 @media (min-width: 768px) {
-  header{
-    height: 150px;
+  header {
+    height: 100px !important;
   }
   .wrapper {
     justify-content: flex-start !important;
+    width: 100%;
+    max-width: 95%;
+    margin-left: auto;
   }
 
   .imgHeader {
@@ -122,11 +126,10 @@ ul>li p {
     height: 150px;
     margin-left: -30px;
   }
-/* MAIN */
-    main {
-  padding-top: 150px;
-  padding-right: 80px;
-}
+  /* MAIN */
+  main {
+    padding-top: 100px;
+  }
   .wrapperMain {
     margin-right: 0;
   }
@@ -151,17 +154,17 @@ ul>li p {
     object-fit: cover;
   }
 
-  .caroussel>div {
+  .caroussel > div {
     height: 250px;
     margin-top: 0;
   }
 
-  ul>li,
-  ul>li a {
+  ul > li,
+  ul > li a {
     font-size: 2rem;
   }
 
-  ul>li p {
+  ul > li p {
     flex-direction: row;
   }
 }
