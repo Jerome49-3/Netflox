@@ -1,6 +1,6 @@
 import './assets/css/App.css'
 import Header from './components/header/Header'
-import logoNetflix from "./assets/images/netfalshLogo.png"
+import logoNetflix from "./assets/images/netfalsh.svg"
 import Main from './components/main/Main'
 import Footer from './components/footer/Footer'
 
