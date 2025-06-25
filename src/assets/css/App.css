@@ -30,7 +30,6 @@ body {
 
 main {
   padding-top: 120px;
-  padding-right: 80px;
 }
 
 .wrapperMain {
@@ -116,7 +115,11 @@ ul>li p {
     width: 300px;
     height: 150px;
   }
-
+/* MAIN */
+    main {
+  padding-top: 150px;
+  padding-right: 80px;
+}
   .wrapperMain {
     margin-right: 0;
   }
